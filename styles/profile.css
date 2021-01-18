@@ -1,0 +1,48 @@
+.profile_page .avatar{
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+    margin: 15px auto;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.profile_page .avatar img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.profile_page .avatar span{
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: #fff8;
+    text-align: center;
+    font-weight: 400;
+    color: rgb(255, 140, 45);
+    transition: 0.3 ease-in-out;
+}
+
+.profile_page .avatar:hover span{
+    bottom: -15%;
+}
+
+.profile_page #file_up{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+::-webkit-file-upload-button{
+    cursor: pointer;
+}
+
